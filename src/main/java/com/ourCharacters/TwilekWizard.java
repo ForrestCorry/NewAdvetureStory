@@ -7,13 +7,13 @@ public class TwilekWizard extends CharacterClass implements WizardInterface {
 
 	@Override
 	public void changeHealth() {
-		// TODO Auto-generated method stub
+		super.setHealth(+ 0);
 
 	}
 
 	@Override
 	public void changeMagic() {
-		// TODO Auto-generated method stub
+		super.setMagic(+ 200);
 
 	}
 

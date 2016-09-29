@@ -1,38 +1,38 @@
 package com.ourCharacters;
 
 import com.app.Weapons.Weapon;
-import com.interfaces.NinjaInterface;
+import com.interfaces.JediInterface;
 import com.parents.CharacterClass;
 
-public class NinjaTurtle extends CharacterClass implements NinjaInterface {
+public class TwilekJedi extends CharacterClass implements JediInterface {
 	
 	
 
-	public NinjaTurtle() {
+	public TwilekJedi() {
 		super();
 		// TODO Auto-generated constructor stub
 	}
 
-	public NinjaTurtle(int health, int magic, String name, Weapon weapon) {
+	public TwilekJedi(int health, int magic, String name, Weapon weapon) {
 		super(health, magic, name, weapon);
 		// TODO Auto-generated constructor stub
 	}
 
 	@Override
 	public void changeHealth() {
-		super.setHealth(+ 20);
+		super.setHealth(+ 50);
 
 	}
 
 	@Override
 	public void changeMagic() {
-		super.setMagic(- 5);
+		super.setMagic(+ 100);
 
 	}
 	@Override
 	public void setWeapon(Weapon weapon) {
 		
-		super.setWeapon(Weapon.SAI);
+		super.setWeapon(Weapon.LIGHTSABER);
 	}
 
 }
